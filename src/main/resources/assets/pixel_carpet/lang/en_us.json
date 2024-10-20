@@ -1,0 +1,9 @@
+{
+  "carpet.category.pixel": "pixel",
+  "carpet.category.progression": "progression",
+
+  "carpet.rule.renewableGravel.desc": "Cobbled Deepslate crushed by falling anvils maks Gravel.",
+  "carpet.rule.disabledNetherPortals.desc": "Removes the ability to enter a Nether Portal.",
+  "carpet.rule.disabledEndPortals.desc": "Removes the ability to enter an End Portal.",
+  "carpet.rule.moreMobsOnLeads.desc": "Allow Leads to be attached to more mobs."
+}

@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pixilaremedia.pixel_carpet.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "leads.AmbientEntityMixin",
+    "leads.EndermanTeleportMixin",
+    "leads.MerchantEntityMixin",
+    "leads.MobEntityMixin",
+    "leads.PandaEntityMixin",
+    "leads.TurtleEntityMixin",
+    "leads.WaterCreatureEntityMixin",
+    "mechanics.FallingBlockEntityMixin",
+    "portals.EndPortalBlockMixin",
+    "portals.NetherPortalBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
