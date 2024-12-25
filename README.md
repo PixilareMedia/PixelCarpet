@@ -29,3 +29,24 @@ Cobbled Deepslate crushed by falling anvils maks Gravel.
 * Default value: `false`
 * Required options: `true`, `false`
 * Categories: `pixel`, `feature`
+
+### preventSnowMelting
+Prevents Snow from melting.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`
+
+### preventIceMelting
+Prevents Ice from melting.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`
+
+### pvpToggle
+Allows players to Opt into PvP on a world.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`

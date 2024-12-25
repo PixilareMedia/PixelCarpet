@@ -5,5 +5,18 @@
   "carpet.rule.renewableGravel.desc": "Cobbled Deepslate crushed by falling anvils maks Gravel.",
   "carpet.rule.disabledNetherPortals.desc": "Removes the ability to enter a Nether Portal.",
   "carpet.rule.disabledEndPortals.desc": "Removes the ability to enter an End Portal.",
-  "carpet.rule.moreMobsOnLeads.desc": "Allow Leads to be attached to more mobs."
+  "carpet.rule.moreMobsOnLeads.desc": "Allow Leads to be attached to more mobs.",
+  "carpet.rule.preventSnowMelting.desc": "Prevents Snow from melting.",
+  "carpet.rule.preventIceMelting.desc": "Prevents Ice from melting.",
+  "carpet.rule.pvpToggle.desc": "Allows players to Opt into PvP on a world.",
+
+  "pixel_carpet.pvp_toggle.on": "PvP for you is now on.",
+  "pixel_carpet.pvp_toggle.on.existing": "You already have PvP on!",
+  "pixel_carpet.pvp_toggle.off": "PvP for you is now off.",
+  "pixel_carpet.pvp_toggle.off.existing": "You already have PvP off!",
+  "pixel_carpet.pvp_toggle.status": "PvP for you is ",
+  "pixel_carpet.pvp_toggle.status.on": "on",
+  "pixel_carpet.pvp_toggle.status.off": "off",
+  "pixel_carpet.pvp_toggle.list": "Players with PvP on: ",
+  "pixel_carpet.pvp_toggle.disabled": "PvP Toggling is disabled by default in Carpet."
 }

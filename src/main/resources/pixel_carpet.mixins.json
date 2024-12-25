@@ -12,8 +12,11 @@
     "leads.TurtleEntityMixin",
     "leads.WaterCreatureEntityMixin",
     "mechanics.FallingBlockEntityMixin",
+    "mechanics.SnowBlockMixin",
+    "mechanics.IceBlockMixin",
     "portals.EndPortalBlockMixin",
-    "portals.NetherPortalBlockMixin"
+    "portals.NetherPortalBlockMixin",
+    "ServerPlayerEntityMixin"
   ],
   "client": [
   ],

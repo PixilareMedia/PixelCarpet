@@ -24,6 +24,6 @@ public class PixelCarpetTranslations {
             return Collections.emptyMap();
         }
         Gson gson = (new GsonBuilder()).setLenient().create();
-        return (Map<String, String>)gson.fromJson(jsonData, (new TypeToken<Map<String, String>>() {}).getType());
+        return gson.fromJson(jsonData, (new TypeToken<Map<String, String>>() {}).getType());
     }
 }

@@ -19,4 +19,13 @@ public class PixelCarpetSettings {
 
     @Rule(categories = {PIXEL, FEATURE})
     public static boolean moreMobsOnLeads = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean preventSnowMelting = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean preventIceMelting = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean pvpToggle = false;
 }
