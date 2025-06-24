@@ -28,4 +28,7 @@ public class PixelCarpetSettings {
 
     @Rule(categories = {PIXEL, FEATURE})
     public static boolean pvpToggle = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean ladderAnywhere = false;
 }

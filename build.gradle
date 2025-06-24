@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.9-SNAPSHOT'
+    id 'fabric-loom' version '1.10-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -14,6 +14,7 @@ repositories {
     // for more information about repositories.
     maven { url 'https://masa.dy.fi/maven' }
     maven { url 'https://api.modrinth.com/maven' }
+    maven { url 'https://cursemaven.com' }
     maven { url "https://maven.terraformersmc.com" }
 }
 
@@ -25,7 +26,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "carpet:fabric-carpet:${project.carpet_core_version}"
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-    modImplementation "maven.modrinth:carpet-extra:${project.carpet_extra_version}"
+    //modImplementation "maven.modrinth:carpet-extra:${project.carpet_extra_version}"
+    modImplementation "curse.maven:carpet-extra-349240:${project.carpet_extra_c_version}"
     modImplementation "maven.modrinth:minitweaks:${project.mintweaks_version}"
 }
 

@@ -9,6 +9,7 @@
   "carpet.rule.preventSnowMelting.desc": "Prevents Snow from melting.",
   "carpet.rule.preventIceMelting.desc": "Prevents Ice from melting.",
   "carpet.rule.pvpToggle.desc": "Allows players to Opt into PvP on a world.",
+  "carpet.rule.ladderAnywhere.desc": "Allows the ladders to be placed anywhere.",
 
   "pixel_carpet.pvp_toggle.on": "PvP for you is now on.",
   "pixel_carpet.pvp_toggle.on.existing": "You already have PvP on!",
