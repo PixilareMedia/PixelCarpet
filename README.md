@@ -50,3 +50,24 @@ Allows players to Opt into PvP on a world.
 * Default value: `false`
 * Required options: `true`, `false`
 * Categories: `pixel`, `feature`
+
+### ladderAnywhere
+Allows the ladders to be placed anywhere.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`
+
+### moreTillable
+Allows for Podzol & Mycellium to be tilled into Farmland.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`
+
+### podzolLeafLitter
+Allows for Podzol to be tilled into Dirt & Leaf Litter.
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `pixel`, `feature`
