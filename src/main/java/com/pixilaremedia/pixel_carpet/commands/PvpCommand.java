@@ -1,12 +1,12 @@
 package com.pixilaremedia.pixel_carpet.commands;
 
-import com.mojang.authlib.GameProfile;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.tree.LiteralCommandNode;
 import com.pixilaremedia.pixel_carpet.PixelCarpetSettings;
 import com.pixilaremedia.pixel_carpet.utils.PvpWhitelist;
 import net.minecraft.command.CommandRegistryAccess;
+import net.minecraft.server.PlayerConfigEntry;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
@@ -35,7 +35,7 @@ public class PvpCommand {
         ServerCommandSource source = ctx.getSource();
 
         if (PixelCarpetSettings.pvpToggle) {
-            GameProfile player = source.getPlayer().getGameProfile();
+            PlayerConfigEntry player = source.getPlayer().getPlayerConfigEntry();
 
             if(!PvpWhitelist.contains(player)) {
                 PvpWhitelist.addPlayer(player);
@@ -55,7 +55,7 @@ public class PvpCommand {
         ServerCommandSource source = ctx.getSource();
 
         if (PixelCarpetSettings.pvpToggle) {
-            GameProfile player = source.getPlayer().getGameProfile();
+            PlayerConfigEntry player = source.getPlayer().getPlayerConfigEntry();
 
             if(PvpWhitelist.contains(player)) {
                 PvpWhitelist.removePlayer(player);
@@ -75,7 +75,7 @@ public class PvpCommand {
         ServerCommandSource source = ctx.getSource();
 
         if (PixelCarpetSettings.pvpToggle) {
-            GameProfile player = source.getPlayer().getGameProfile();
+            PlayerConfigEntry player = source.getPlayer().getPlayerConfigEntry();
 
             source.sendFeedback(() -> Text.translatableWithFallback("pixel_carpet.pvp_toggle.status" + (PvpWhitelist.contains(player) ? "pixel_carpet.pvp_toggle.status.on" : "pixel_carpet.pvp_toggle.status.off"), "PvP for you is " + (PvpWhitelist.contains(player) ? "on" : "off")), false);
             return 1;

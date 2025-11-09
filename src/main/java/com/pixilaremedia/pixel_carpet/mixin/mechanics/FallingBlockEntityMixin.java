@@ -30,7 +30,7 @@ public abstract class FallingBlockEntityMixin extends Entity {
     ))
     private void tick(CallbackInfo ci) {
         if (getBlockState().isIn(BlockTags.ANVIL)) {
-            World world = this.getWorld();
+            World world = this.getEntityWorld();
             if (PixelCarpetSettings.renewableGravel && world.getBlockState(BlockPos.ofFloored(this.getX(), this.getY() - 0.06, this.getZ())).getBlock() == Blocks.COBBLED_DEEPSLATE) {
                 world.breakBlock(getBlockPos().down(), false);
                 world.setBlockState(getBlockPos().down(), Blocks.GRAVEL.getDefaultState(), 3);

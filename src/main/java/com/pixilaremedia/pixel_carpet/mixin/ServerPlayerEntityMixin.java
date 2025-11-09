@@ -17,13 +17,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(ServerPlayerEntity.class)
 public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     public ServerPlayerEntityMixin(World world, BlockPos pos, float yaw, GameProfile gameProfile, @Nullable PlayerPublicKey publicKey) {
-        super(world, pos, yaw, gameProfile);
+        super(world, gameProfile);
     }
 
     @Inject(method = "shouldDamagePlayer", at = @At("HEAD"), cancellable = true)
     public void checkWhitelist(PlayerEntity targetPlayer, CallbackInfoReturnable<Boolean> cir) {
         if (PixelCarpetSettings.pvpToggle) {
-            if (!PvpWhitelist.contains(this.getGameProfile()) || !PvpWhitelist.contains(targetPlayer.getGameProfile())) {
+            if (!PvpWhitelist.contains(this.getPlayerConfigEntry()) || !PvpWhitelist.contains(targetPlayer.getPlayerConfigEntry())) {
                 cir.setReturnValue(false);
             }
         }

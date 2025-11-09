@@ -31,4 +31,10 @@ public class PixelCarpetSettings {
 
     @Rule(categories = {PIXEL, FEATURE})
     public static boolean ladderAnywhere = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean moreTillable = false;
+
+    @Rule(categories = {PIXEL, FEATURE})
+    public static boolean podzolLeafLitter = false;
 }

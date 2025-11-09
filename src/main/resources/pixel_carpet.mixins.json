@@ -15,6 +15,7 @@
     "mechanics.SnowBlockMixin",
     "mechanics.IceBlockMixin",
     "mechanics.LadderBlockMixin",
+    "mechanics.TillingActionMixin",
     "portals.EndPortalBlockMixin",
     "portals.NetherPortalBlockMixin",
     "ServerPlayerEntityMixin"
